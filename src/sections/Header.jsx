@@ -1,19 +1,77 @@
-
+import logo from "../assets/JMClogoLight.jpeg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { NavLink } from "react-router-dom";
+import { useState } from "react"
 
 function Header() {
+    const bars = <FontAwesomeIcon icon={faBars} />
+    const [open, setOpen] = useState(false);
+
     return (
-        <nav className="top-nav-bar">
-
-
+        <nav className={`top-nav-bar ${open ? 'open' : ""}`}>
+            <img id="logoJMC" src={logo} alt="logo Jean-Marie Chateaux" />
+            <button onClick={() => { setOpen(!open) }} className="burger">{bars}</button>
             <ul>
-                <span class="material-symbols-outlined">
-                    hexagon
-                </span>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-
+                <li>
+                    <NavLink
+                        to="#skills"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending navlinks" : isActive ? "active navlinks" : "navlinks"
+                        }>
+                        Compétences
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        to="#projects"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending navlinks" : isActive ? "active navlinks" : "navlinks"
+                        }>
+                        Projets
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        to="#contact"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending navlinks" : isActive ? "active navlinks" : "navlinks"
+                        }>
+                        Me Contacter
+                    </NavLink>
+                </li>
             </ul>
+            <div className="dropdownContent">
+                <ul>
+                    <li>
+                        <NavLink
+                            to="#skills"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending dropdown-links" : isActive ? "active dropdown-links" : "dropdown-links"
+                            }>
+                            Compétences
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="#projects"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending dropdown-links" : isActive ? "active dropdown-links" : "dropdown-links"
+                            }>
+                            Projets
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="#contact"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending dropdown-links" : isActive ? "active dropdown-links" : "dropdown-links"
+                            }>
+                            Me Contacter
+                        </NavLink>
+                    </li>
+                </ul>
+            </div >
         </nav>
     )
 }

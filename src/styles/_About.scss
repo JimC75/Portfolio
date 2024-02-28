@@ -1,0 +1,40 @@
+.about {
+    width: 100%;
+    padding: 100px 0 50px 0;
+    position: absolute;
+    background-color: $lightest-blue;
+
+    .container {
+        width: 300px;
+        margin: auto;
+        display: flex;
+
+        img {
+            width: 120px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px $dark-navi;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h1 {
+                font-family: Helvetica, sans-serif;
+                font-size: 26px;
+
+                .blue {
+                    color: $navi;
+                }
+            }
+
+            h3 {
+                font-family: Helvetica, sans-serif;
+                font-size: 18px;
+            }
+        }
+
+    }
+
+}

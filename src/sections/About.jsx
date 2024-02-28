@@ -1,6 +1,16 @@
+import picture from '../assets/mugshot.jpeg'
+
 function About() {
     return (
-        <h1>hello World</h1>
+        <section className="about">
+            <div className='container'>
+                <img src={picture} alt="jean-marie chateaux picture" />
+                <div>
+                    <h1>Jean-Marie <span className='blue'>CHATEAUX</span></h1>
+                    <h3>Développeur Web</h3>
+                </div>
+            </div>
+        </section>
     )
 }
 

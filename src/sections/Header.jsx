@@ -7,12 +7,22 @@ import { useState } from "react"
 function Header() {
     const bars = <FontAwesomeIcon icon={faBars} />
     const [open, setOpen] = useState(false);
+    const [hidden, setHidden] = useState(true);
+    function windowWidth() {
+        if (window.innerWidth >= 400) {
+            setHidden(false)
+        } else {
+            setHidden(true)
+        }
+    }
+    window.onresize = windowWidth;
+
 
     return (
         <nav className={`top-nav-bar ${open ? 'open' : ""}`}>
             <img id="logoJMC" src={logo} alt="logo Jean-Marie Chateaux" />
             <button onClick={() => { setOpen(!open) }} className="burger">{bars}</button>
-            <ul>
+            <ul className={hidden && "hidden"}>
                 <li>
                     <NavLink
                         to="#skills"
@@ -41,7 +51,7 @@ function Header() {
                     </NavLink>
                 </li>
             </ul>
-            <div className="dropdownContent">
+            <div className="dropdown-content">
                 <ul>
                     <li>
                         <NavLink

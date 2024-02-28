@@ -1,15 +1,18 @@
 .top-nav-bar {
     display: flex;
-    padding: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    padding: 10px 0;
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: 60px;
-    background-color: blue;
+    background-color: $dark-navi;
 
     #logoJMC {
         width: 40px;
         height: 40px;
-        margin-left: 10px;
+        margin-left: 20px;
         border-radius: 50%;
     }
 
@@ -20,42 +23,74 @@
         font-size: 25px;
         border: none;
         border-radius: 50%;
+        background-color: $lightest-blue;
+        transition: transform 0.3s ease-in-out;
     }
 
 
     ul {
-        display: none;
-        list-style: none;
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
+        align-items: center;
 
         li {
             .navlinks {
-
-                color: white;
+                text-decoration: none;
+                color: $lightest-blue;
             }
+        }
+
+        &.hidden {
+            display: none;
         }
     }
 
-    .dropdownContent {
+    .dropdown-content {
         width: 100%;
         height: 0px;
         overflow: hidden;
-        border: 3px solid red;
+        transition: height 0.3s ease-in-out;
+        font-family: SFMono;
 
         ul {
             display: flex;
+            width: 100%;
+            margin-top: 10px;
+            flex-direction: column;
+            gap: 20px;
 
             li {
                 .dropdown-links {
 
-                    color: white;
+                    color: $lightest-blue;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    text-decoration: underline;
                 }
             }
         }
     }
 
     &.open {
-        .dropdownContent {
-            height: 100px;
+        .burger {
+            transform: rotate(180deg);
         }
+
+        .dropdown-content {
+            height: 120px;
+        }
+    }
+}
+
+@media(min-width: 400px) {
+    .burger {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
     }
 }

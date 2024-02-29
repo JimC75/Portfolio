@@ -1,11 +1,16 @@
+// font-familly: SFMono;
 @font-face {
     font-family: "SFMono";
     src: local("SFMonoRegular"),
         url("../Fonts/SF-Mono/SFMonoRegular.otf") format("truetype");
 }
 
+// font-familly: SFMonoLight;
 @font-face {
     font-family: "SFMonoLight";
     src: local("SFMonoLight"),
         url("../Fonts/SF-Mono/SFMonoLight.otf") format("truetype");
 }
+
+// font-familly: Montserrat;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')

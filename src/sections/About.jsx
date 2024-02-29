@@ -8,6 +8,7 @@ function About() {
                 <div>
                     <h1>Jean-Marie <span className='blue'>CHATEAUX</span></h1>
                     <h3>Développeur Web</h3>
+                    <p>Codeur passionné. <br /> Apprenti perpétuel.</p>
                 </div>
             </div>
         </section>

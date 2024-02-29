@@ -1,16 +1,16 @@
 .about {
     width: 100%;
     padding: 100px 0 50px 0;
-    position: absolute;
+    // position: absolute;
     background-color: $lightest-blue;
 
     .container {
-        width: 300px;
+        width: 350px;
         margin: auto;
         display: flex;
 
         img {
-            width: 120px;
+            width: 150px;
             border-radius: 10px;
             box-shadow: 3px 3px 10px $dark-navi;
         }
@@ -21,17 +21,21 @@
             justify-content: space-around;
 
             h1 {
-                font-family: Helvetica, sans-serif;
                 font-size: 26px;
 
                 .blue {
+                    font-size: 28px;
                     color: $navi;
                 }
             }
 
             h3 {
-                font-family: Helvetica, sans-serif;
                 font-size: 18px;
+            }
+
+            p {
+                font-family: SFMono;
+                font-size: 14px;
             }
         }
 

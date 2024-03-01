@@ -1,11 +1,129 @@
 .skills {
     background-color: $navi;
     color: white;
-    padding: 10px;
+
+    h2 {
+        font-size: 21px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
 
     .logos {
-        margin: 5px;
-        display: flex;
-        justify-content: space-around;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+
+
+        .logos-slide {
+            display: inline-block;
+            animation: 5s slide infinite linear;
+
+            .brand-icon {
+                margin: 20px;
+                font-size: 30px;
+            }
+
+
+        }
+    }
+
+    .logos:before,
+    .logos:after {
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 100%;
+        content: "";
+        z-index: 2;
+    }
+
+    .logos:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), $navi);
+    }
+
+    .logos:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), $navi);
+    }
+
+    .logos:hover {
+        .logos-slide {
+            animation-play-state: paused;
+
+            #html-icon:hover {
+                color: rgb(214, 75, 40);
+            }
+
+            #sass-icon:hover {
+                color: rgb(193, 85, 139);
+            }
+
+            #js-icon:hover {
+                color: rgb(231, 208, 62);
+            }
+
+            #react-icon:hover {
+                color: rgb(79, 207, 243);
+            }
+
+            #node-icon:hover {
+                color: rgb(66, 143, 49);
+            }
+
+            #bs-icon:hover {
+                color: rgb(110, 75, 167);
+            }
+
+            #gh-icon:hover {
+                color: rgb(53, 109, 190);
+            }
+        }
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+}
+
+@media(min-width: 400px) {
+    .skills {
+        h2 {
+            font-size: 24px;
+            padding-top: 20px;
+        }
+
+        .logos {
+            .logos-slide {
+                .brand-icon {
+                    font-size: 40px;
+                    margin: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .skills {
+        h2 {
+            padding-top: 40px;
+        }
+
+        .logos {
+            .logos-slide {
+                .brand-icon {
+                    font-size: 60px;
+                    margin: 50px;
+                }
+            }
+        }
     }
 }

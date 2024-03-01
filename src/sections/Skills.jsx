@@ -11,13 +11,47 @@ export default function Skills() {
         <section className="skills">
             <h2>Mes Compétences</h2>
             <div className="logos">
-                <FaHtml5 />
-                <FaSass />
-                <IoLogoJavascript />
-                <FaReact />
-                <FaNodeJs />
-                <FaBootstrap />
-                <SiGithub />
+                <div className="logos-slide">
+                    <FaHtml5 className="brand-icon" id="html-icon" title="HTML5" />
+                    <FaSass className="brand-icon" id="sass-icon" title="SASS" />
+                    <IoLogoJavascript className="brand-icon" id="js-icon" title="JavaScript" />
+                    <FaReact className="brand-icon" id="react-icon" title="React" />
+                    <FaNodeJs className="brand-icon" id="node-icon" title="NodeJS" />
+                    <FaBootstrap className="brand-icon" id="bs-icon" title="Bootstrap" />
+                    <SiGithub className="brand-icon" id="gh-icon" title="GitHub" />
+
+                </div>
+
+                <div className="logos-slide">
+                    <FaHtml5 className="brand-icon" id="html-icon" title="HTML5" />
+                    <FaSass className="brand-icon" id="sass-icon" title="SASS" />
+                    <IoLogoJavascript className="brand-icon" id="js-icon" title="JavaScript" />
+                    <FaReact className="brand-icon" id="react-icon" title="React" />
+                    <FaNodeJs className="brand-icon" id="node-icon" title="NodeJS" />
+                    <FaBootstrap className="brand-icon" id="bs-icon" title="Bootstrap" />
+                    <SiGithub className="brand-icon" id="gh-icon" title="GitHub" />
+
+                </div>
+                <div className="logos-slide">
+                    <FaHtml5 className="brand-icon" id="html-icon" title="HTML5" />
+                    <FaSass className="brand-icon" id="sass-icon" title="SASS" />
+                    <IoLogoJavascript className="brand-icon" id="js-icon" title="JavaScript" />
+                    <FaReact className="brand-icon" id="react-icon" title="React" />
+                    <FaNodeJs className="brand-icon" id="node-icon" title="NodeJS" />
+                    <FaBootstrap className="brand-icon" id="bs-icon" title="Bootstrap" />
+                    <SiGithub className="brand-icon" id="gh-icon" title="GitHub" />
+
+                </div>
+                <div className="logos-slide">
+                    <FaHtml5 className="brand-icon" id="html-icon" title="HTML5" />
+                    <FaSass className="brand-icon" id="sass-icon" title="SASS" />
+                    <IoLogoJavascript className="brand-icon" id="js-icon" title="JavaScript" />
+                    <FaReact className="brand-icon" id="react-icon" title="React" />
+                    <FaNodeJs className="brand-icon" id="node-icon" title="NodeJS" />
+                    <FaBootstrap className="brand-icon" id="bs-icon" title="Bootstrap" />
+                    <SiGithub className="brand-icon" id="gh-icon" title="GitHub" />
+
+                </div>
 
             </div>
             {/* <FontAwesomeIcon icon="fa-brands fa-html5" /> */}

@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1",
+        "name": "Kasa",
+        "picture": "/Kasa-Screenshot.png",
+        "descritpion": "Application web de location d'appartements et de chambres d'hôte.",
+        "stack": [
+            "HTML",
+            "Sass",
+            "React"
+        ],
+        "liveLink": "https://kasa-flax.vercel.app",
+        "codeLink": "https://github.com/JimC75/Kasa"
+    },
+    {
+        "id": "2",
+        "name": "Oh My Food",
+        "picture": "/OhMyFood-Screenshot.png",
+        "descritpion": "Service de consultation de menus dans différents restaurants et commande de repas en ligne",
+        "stack": [
+            "HTML",
+            "CSS",
+            "Javascript"
+        ],
+        "liveLink": "https://jimc75.github.io/Ohmyfood/",
+        "codeLink": "https://github.com/JimC75/Ohmyfood"
+    }
+]

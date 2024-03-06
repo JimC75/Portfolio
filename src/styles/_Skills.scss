@@ -1,11 +1,12 @@
 .skills {
     background-color: $navi;
     color: white;
+    padding: 10px 0;
 
     h2 {
         font-size: 21px;
         font-weight: 600;
-        padding-top: 10px;
+        text-shadow: 1px 1px 1px orange;
     }
 
     .logos {
@@ -16,7 +17,7 @@
 
         .logos-slide {
             display: inline-block;
-            animation: 5s slide infinite linear;
+            animation: 10s slide infinite linear;
 
             .brand-icon {
                 margin: 20px;

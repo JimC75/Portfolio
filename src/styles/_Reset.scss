@@ -1,13 +1,24 @@
+$lighter-navi: rgb(19, 19, 106);
+$navi: #112240;
+$dark-navi: #020c1b;
+$light-blue2: rgb(159, 193, 249);
+$light-blue: #c9cedc;
+$lightest-blue: #ccd6f6;
+
+$light-slate: #a8b2d1;
+
+$bg-blue: rgb(13, 24, 45);
+
+$light-grey: #c5c5c5;
+$mid-grey: #7d7c7c;
+$dark-grey: #404040;
+$darkest-grey: #282828;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-$navi: rgb(17, 34, 64);
-$dark-navi: #020c1b;
-$lightest-blue: rgb(204, 214, 246);
-
 
 #root {
   max-width: 1440px;

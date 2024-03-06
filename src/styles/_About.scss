@@ -1,19 +1,36 @@
 .about {
     width: 100%;
     padding: 50px 0;
-    // padding: 100px 0 50px 0;
-    // position: absolute;
-    background-color: $lightest-blue;
+
+    // background-color: $light-slate;
+    background: rgb(17, 34, 64);
+    background: linear-gradient(0deg, rgba(17, 34, 64, 1) 0%, rgba(2, 12, 27, 1) 100%);
 
     .container {
         width: 100%;
         margin: auto;
         display: flex;
+        flex-direction: column;
 
         img {
-            width: 120px;
+            margin: auto;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            object-position: 0 0;
             border-radius: 10px;
             box-shadow: 3px 3px 10px $dark-navi;
+        }
+
+        div::before,
+        div::after {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 3px;
+            background-color: orange;
+            position: relative;
+            margin: 20px auto 10px auto;
         }
 
         div {
@@ -24,20 +41,23 @@
             h1 {
                 font-size: 26px;
                 font-weight: 800;
+                color: white;
 
                 .blue {
-                    color: $navi;
+                    color: $light-slate;
                     font-weight: 1000;
                 }
             }
 
             h3 {
                 font-size: 20px;
+                color: white;
             }
 
             p {
                 font-family: SFMono;
-                font-size: 13px;
+                font-size: 14px;
+                color: $light-slate;
             }
         }
 

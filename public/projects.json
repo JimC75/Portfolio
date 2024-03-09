@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Kasa",
-        "picture": "/Kasa-Screenshot.png",
+        "picture": "/Kasa-Screenshot-v2.png",
         "description": "Application web de location d'appartements et de chambres d'hôte.",
         "stack": [
             "HTML",
@@ -15,7 +15,7 @@
     {
         "id": "2",
         "name": "Oh My Food",
-        "picture": "/OhMyFood-Screenshot.png",
+        "picture": "/OhMyFood-Screenshot-v2.png",
         "description": "Service de consultation de menus dans différents restaurants et commande de repas en ligne",
         "stack": [
             "HTML",
@@ -24,5 +24,18 @@
         ],
         "liveLink": "https://jimc75.github.io/Ohmyfood/",
         "codeLink": "https://github.com/JimC75/Ohmyfood"
+    },
+    {
+        "id": "3",
+        "name": "La Maison Jungle",
+        "picture": "/LMJ-Screenshot.png",
+        "description": "Site e-commerce de vente de plantes d'intérieur et d'extérieur",
+        "stack": [
+            "HTML",
+            "Sass",
+            "React"
+        ],
+        "liveLink": "https://jimc75.github.io/La-Maison-Jungle/",
+        "codeLink": "https://github.com/JimC75/La-Maison-Jungle"
     }
 ]

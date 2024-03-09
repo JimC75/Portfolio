@@ -1,4 +1,4 @@
-import logo from "../assets/JMClogoLight.jpeg"
+import logo from "../assets/transparentlogo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { NavLink } from "react-router-dom";

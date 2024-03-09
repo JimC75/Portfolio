@@ -3,6 +3,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 
 export default function ProjectCard({ name, cover, description, stack, live, code }) {
+
     return (
         <div className="project-card">
             <img src={cover} alt={name} className="project-card-cover" />

@@ -19,6 +19,7 @@
         height: inherit;
         z-index: 3;
         object-fit: cover;
+        object-position: 0 0;
         position: absolute;
         left: 0;
         top: 0;
@@ -38,8 +39,6 @@
         width: 90px;
         height: 250px;
         right: 0;
-        // border-left: 1px solid orange;
-        // box-shadow: -2px -2px 2px $light-grey;
 
         .title-countainer {
             position: absolute;
@@ -49,20 +48,31 @@
             box-shadow: 2px -0.5px .5px orange;
             border-radius: 0 10px 0 0;
             margin: 7px;
-            width: 40px;
-            height: 80px;
+            width: 50px;
+            height: 146px;
             text-align: start;
-            white-space: nowrap;
+            // white-space: nowrap;
 
 
-            h3 {
+            .project-card-name {
+                display: block;
+                width: 180px;
                 position: relative;
-                left: 22px;
+                left: 15px;
                 font-size: 20px;
                 font-weight: 800;
                 transform: rotate(90deg);
                 transform-origin: left;
             }
+
+            // .project-card-name-2 {
+            //     position: relative;
+            //     top: -5px;
+            //     font-size: 20px;
+            //     font-weight: 800;
+            //     transform: rotate(90deg);
+            //     transform-origin: left;
+            // }
 
         }
 
@@ -106,9 +116,9 @@
                 color: white
             }
 
-            a:nth-child(2):hover {
-                // font-size: 32px;
-            }
+            // a:nth-child(2):hover {
+            //     font-size: 32px;
+            // }
         }
     }
 

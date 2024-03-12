@@ -1,0 +1,43 @@
+.contact {
+    // padding: 40px 0;
+    color: white;
+    background: rgb(17, 34, 64);
+    background: linear-gradient(0deg, rgba(17, 34, 64, 1) 0%, rgba(10, 24, 47, 1) 65%, rgba(2, 12, 27, 1) 100%);
+
+    .contact-title {
+        font-size: 24px;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px orange;
+        padding: 20px 0;
+    }
+
+    .contact-form {
+        width: 320px;
+        margin: auto;
+
+        .contact-form-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            label {
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid $dark-navi;
+                border-radius: 20px;
+            }
+
+            textarea {
+                height: 140px;
+                resize: none;
+            }
+        }
+    }
+}

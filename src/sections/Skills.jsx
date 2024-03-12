@@ -8,7 +8,7 @@ import { FaNodeJs } from "react-icons/fa";
 
 export default function Skills() {
     return (
-        <section className="skills">
+        <section className="skills" id="skills">
             <h2>Mes Compétences</h2>
             <div className="logos">
                 <div className="logos-slide">

@@ -1,7 +1,8 @@
 import logo from "../assets/transparentlogo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import { Link } from 'react-scroll';
 import { useState } from "react"
 
 function Header() {
@@ -23,67 +24,21 @@ function Header() {
             <img id="logoJMC" src={logo} alt="logo Jean-Marie Chateaux" />
             <button onClick={() => { setOpen(!open) }} className="burger">{bars}</button>
             <ul className={hidden && "hidden"}>
-                <li>
-                    <NavLink
-                        to="#skills"
-                        className={({ isActive, isPending }) =>
-                            isPending ? "pending navlinks" : isActive ? "active navlinks" : "navlinks"
-                        }>
-                        Compétences
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="#projects"
-                        className={({ isActive, isPending }) =>
-                            isPending ? "pending navlinks" : isActive ? "active navlinks" : "navlinks"
-                        }>
-                        Projets
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="#contact"
-                        className={({ isActive, isPending }) =>
-                            isPending ? "pending navlinks" : isActive ? "active navlinks" : "navlinks"
-                        }>
-                        Me Contacter
-                    </NavLink>
-                </li>
+                <li><Link to="skills" className="nav-link" smooth={true} duration={500} offset={-50}>Mes Compétences</Link></li>
+                <li><Link to="projects" className="nav-link" smooth={true} duration={500} offset={-20}>Mes Projets</Link></li>
+                <li><Link to="contact" className="nav-link" smooth={true} duration={500} offset={0}>Me Contacter</Link></li>
             </ul>
-            <div className="dropdown-content">
-                <ul>
-                    <li>
-                        <NavLink
-                            to="#skills"
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending dropdown-links" : isActive ? "active dropdown-links" : "dropdown-links"
-                            }>
-                            Compétences
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="#projects"
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending dropdown-links" : isActive ? "active dropdown-links" : "dropdown-links"
-                            }>
-                            Projets
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="#contact"
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending dropdown-links" : isActive ? "active dropdown-links" : "dropdown-links"
-                            }>
-                            Me Contacter
-                        </NavLink>
-                    </li>
-                </ul>
-            </div >
-        </nav>
-    )
-}
 
+            <div className="dropdown-content">
+                <ul className={hidden && "hidden"}>
+                    <li><Link to="skills" className="nav-link" smooth={true} duration={500} offset={-50}>Mes Compétences</Link></li>
+                    <li><Link to="projects" className="nav-link" smooth={true} duration={500} offset={-20}>Mes Projets</Link></li>
+                    <li><Link to="contact" className="nav-link" smooth={true} duration={500} offset={0}>Me Contacter</Link></li>
+
+                    {/* Add more links for other sections as needed */}
+                </ul>
+            </div>
+        </nav>
+    );
+}
 export default Header

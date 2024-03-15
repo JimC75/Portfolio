@@ -1,1 +1,47 @@
 // linear-gradient(180deg, rgba(17, 34, 64, 1) 0%, rgba(2, 12, 27, 1) 100%);
+
+footer {
+    height: 80px;
+    background-color: $darkest-grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px orange;
+    display: flex;
+    flex-direction: column;
+
+    .social-links-container {
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+            margin: 10px;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+
+    }
+
+    p {
+        width: 100%;
+        display: block;
+        font-size: 12px;
+        font-family: SFMono;
+        text-shadow: none;
+    }
+
+    .special-character {
+        font-size: 14px;
+    }
+
+}

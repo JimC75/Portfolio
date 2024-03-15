@@ -17,6 +17,7 @@ function Header() {
         }
     }
     window.onresize = windowWidth;
+    window.onload = windowWidth;
 
 
     return (
@@ -24,14 +25,14 @@ function Header() {
             <img id="logoJMC" src={logo} alt="logo Jean-Marie Chateaux" />
             <button onClick={() => { setOpen(!open) }} className="burger">{bars}</button>
             <ul className={hidden && "hidden"}>
-                <li><Link to="skills" className="nav-link" smooth={true} duration={500} offset={-50}>Mes Compétences</Link></li>
+                <li><Link to="skills" className="nav-link" smooth={true} duration={500} offset={-30}>Mes Compétences</Link></li>
                 <li><Link to="projects" className="nav-link" smooth={true} duration={500} offset={-20}>Mes Projets</Link></li>
                 <li><Link to="contact" className="nav-link" smooth={true} duration={500} offset={0}>Me Contacter</Link></li>
             </ul>
 
             <div className="dropdown-content">
                 <ul className={hidden && "hidden"}>
-                    <li><Link to="skills" className="nav-link" smooth={true} duration={500} offset={-50}>Mes Compétences</Link></li>
+                    <li><Link to="skills" className="nav-link" smooth={true} duration={500} offset={-30}>Mes Compétences</Link></li>
                     <li><Link to="projects" className="nav-link" smooth={true} duration={500} offset={-20}>Mes Projets</Link></li>
                     <li><Link to="contact" className="nav-link" smooth={true} duration={500} offset={0}>Me Contacter</Link></li>
 

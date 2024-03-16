@@ -24,18 +24,18 @@ export default function Contact() {
     return (
         <section className="contact" id='contact'>
             <h2 className="contact-title">Me Contacter</h2>
-            <form ref={form} onSubmit={sendEmail} className='contact-form'>
+            <form ref={form} onSubmit={sendEmail} className='contact-form' >
                 <div className="contact-form-item">
                     <label>Nom *</label>
-                    <input type="text" name="user_name" required />
+                    <input type="text" name="user_name" required data-aos="zoom-out" data-aos-duration="1200" />
                 </div>
                 <div className="contact-form-item">
                     <label>E-mail *</label>
-                    <input type="email" name="user_email" required />
+                    <input type="email" name="user_email" required data-aos="zoom-out" data-aos-duration="1200" />
                 </div>
                 <div className="contact-form-item">
                     <label>Message *</label>
-                    <textarea name="message" required />
+                    <textarea name="message" required data-aos="zoom-out" data-aos-duration="1200" />
                     <p>* = champ obligatoire</p>
                 </div>
                 <input type="submit" value="Send" id='submit-button' />

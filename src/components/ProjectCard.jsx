@@ -12,7 +12,7 @@ export default function ProjectCard({
 }) {
 
   return (
-    <div className="project-card">
+    <div className="project-card" data-aos="flip-left" data-aos-duration="1200">
       <img src={cover} alt={name} className="project-card-cover" />
 
       <div className="project-card-right-container">

@@ -10,7 +10,7 @@ function Header() {
     const [open, setOpen] = useState(false);
     const [hidden, setHidden] = useState(true);
     function windowWidth() {
-        if (window.innerWidth >= 400) {
+        if (window.innerWidth >= 768) {
             setHidden(false)
         } else {
             setHidden(true)

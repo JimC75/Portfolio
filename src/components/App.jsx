@@ -9,6 +9,7 @@ import Contact from '../sections/Contact'
 import Footer from '../sections/Footer'
 
 
+
 class App extends Component {
   componentDidMount() {
     Events.scrollEvent.register('begin', function () {

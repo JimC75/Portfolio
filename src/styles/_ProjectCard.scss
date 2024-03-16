@@ -1,9 +1,6 @@
 .project-card {
-
-    // background: rgb(0, 0, 0);
-    // background: linear-gradient(320deg, rgba(0, 0, 0, 1) 0%, rgba(64, 64, 64, 1) 100%);
-    // box-shadow: 4px 4px 10px $mid-grey;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(190, 197, 221, 1) 61%, $light-slate 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(190, 197, 221, 1) 61%, $light-slate 100%);
+    // background-color: rgba(190, 197, 221, 1);
     box-shadow: 6px 6px 0px rgba(255, 166, 0, 0.8);
 
     width: 340px;
@@ -27,6 +24,8 @@
 
         transition: all .3s ease-in-out;
 
+
+        /* Uncomment to open cards */
         // width: 250px;
         // height: 150px;
         // padding: 5px;
@@ -43,9 +42,8 @@
         .title-countainer {
             position: absolute;
             right: 0px;
-            color: white;
-            text-shadow: 3px 3px 3px orange;
-            box-shadow: 2px -0.5px .5px orange;
+            // text-shadow: 3px 3px 3px orange;
+            box-shadow: 3px -1px 2px white;
             border-radius: 0 10px 0 0;
             margin: 7px;
             width: 50px;
@@ -55,6 +53,8 @@
 
 
             .project-card-name {
+                color: white;
+                text-shadow: 0px 0px 5px orange;
                 display: block;
                 width: 180px;
                 position: relative;
@@ -64,15 +64,6 @@
                 transform: rotate(90deg);
                 transform-origin: left;
             }
-
-            // .project-card-name-2 {
-            //     position: relative;
-            //     top: -5px;
-            //     font-size: 20px;
-            //     font-weight: 800;
-            //     transform: rotate(90deg);
-            //     transform-origin: left;
-            // }
 
         }
 
@@ -107,6 +98,7 @@
 
             a:nth-child(2) {
                 font-size: 28px;
+                margin-bottom: 3px;
             }
 
             a:hover {
@@ -130,19 +122,17 @@
         width: 250px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        // box-shadow: 2px -2px 3px $mid-grey;
-        // border: 2px solid $mid-grey;
-        // border-left: none;
-        // border-bottom: none;
+        justify-content: center;
 
         p {
             font-size: 13px;
             text-align: justify;
             font-weight: 800;
+            margin-top: 15px;
         }
 
         ul {
+            margin-top: 20px;
             display: flex;
             list-style: none;
             justify-content: right;
@@ -154,21 +144,9 @@
             }
         }
     }
-
-    // .project-card-bottom-container::before {
-    //     content: "";
-    //     display: block;
-    //     position: relative;
-    //     top: 0;
-    //     margin: 2px auto;
-    //     width: 100px;
-    //     height: 2px;
-    //     background-color: orange;
-    // }
 }
 
 .project-card:hover {
-    // box-shadow: none;
 
     .project-card-cover {
         width: 250px;

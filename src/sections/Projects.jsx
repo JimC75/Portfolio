@@ -1,5 +1,10 @@
 import ProjectCard from "../components/ProjectCard";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function Projects() {
     const [data, setData] = useState(null);
@@ -12,17 +17,20 @@ export default function Projects() {
     }, []);
 
     return (
-        <section className="projects" id="projects">
-            <h2 className="projects-title">Mes Projets</h2>
-            {
-                data ? (
-                    data.map(p =>
-                        < ProjectCard name={p.name} cover={p.picture} description={p.description} stack={p.stack} live={p.liveLink} code={p.codeLink} key={p.id} />
+        <div className="animation" >
+            <section className="projects" id="projects">
+                <h2 className="projects-title">Mes Projets</h2>
+                {
+                    data ? (
+                        data.map(p =>
+                            < ProjectCard name={p.name} cover={p.picture} description={p.description} stack={p.stack} live={p.liveLink} code={p.codeLink} key={p.id} />
+                        )
+                    ) : (
+                        <p>Chargement ...</p>
                     )
-                ) : (
-                    <p>Chargement ...</p>
-                )
-            }
-        </section>
+                }
+            </section>
+
+        </div>
     )
 }

@@ -4,6 +4,7 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react
 import App from './components/App.jsx'
 import './styles/index.scss'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />

@@ -38,7 +38,7 @@ export default function Contact() {
                     <textarea name="message" required data-aos="zoom-out" data-aos-duration="1200" />
                     <p>* = champ obligatoire</p>
                 </div>
-                <input type="submit" value="Send" id='submit-button' />
+                <input type="submit" value="Envoyer" id='submit-button' />
             </form>
         </section>
     );

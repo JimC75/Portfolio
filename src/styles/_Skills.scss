@@ -93,23 +93,6 @@
 
 }
 
-@media(min-width: 400px) {
-    .skills {
-        h2 {
-            font-size: 24px;
-            padding-top: 20px;
-        }
-
-        .logos {
-            .logos-slide {
-                .brand-icon {
-                    font-size: 40px;
-                    margin: 30px;
-                }
-            }
-        }
-    }
-}
 
 @media(min-width: 768px) {
     .skills {
@@ -118,6 +101,8 @@
         }
 
         .logos {
+            margin: 20px 0;
+
             .logos-slide {
                 .brand-icon {
                     font-size: 60px;

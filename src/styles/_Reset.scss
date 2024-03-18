@@ -28,6 +28,12 @@ $darkest-grey: #282828;
   // color: #ffa500;
 }
 
+@media(min-width: 768px) {
+  h2 {
+    font-size: 30px !important;
+  }
+}
+
 
 
 // .material-symbols-outlined {

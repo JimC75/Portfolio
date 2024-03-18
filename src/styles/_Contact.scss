@@ -67,3 +67,42 @@
         }
     }
 }
+
+@media(min-width:768px) {
+    .contact {
+
+        .contact-form {
+            width: 600px !important;
+            margin: auto;
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .contact-form-item:nth-child(1) {
+                width: 240px;
+
+            }
+
+            .contact-form-item:nth-child(2) {
+                width: 240px;
+
+            }
+
+            .contact-form-item:nth-child(3) {
+                width: 540px;
+                margin: auto;
+
+                textarea {
+                    height: 200px;
+                }
+            }
+
+            #submit-button {
+                font-size: 16px;
+                margin: 20px auto;
+
+            }
+        }
+    }
+}

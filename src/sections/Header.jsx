@@ -17,7 +17,7 @@ function Header() {
         }
     }
     window.onresize = windowWidth;
-    window.onload = windowWidth;
+    window.addEventListener('load', windowWidth);
 
 
     return (

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import Header from "../sections/Header"
 import About from "../sections/About"
+import Carrier from '../sections/Carrier'
 import Skills from '../sections/Skills'
 import Projects from '../sections/Projects'
 import Contact from '../sections/Contact'
@@ -33,6 +34,7 @@ class App extends Component {
       <div>
         <Header />
         <About />
+        <Carrier />
         <Element name="Skills">
           <Skills />
         </Element>

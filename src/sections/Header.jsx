@@ -3,21 +3,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 // import { NavLink } from "react-router-dom";
 import { Link } from 'react-scroll';
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 function Header() {
     const bars = <FontAwesomeIcon icon={faBars} />
     const [open, setOpen] = useState(false);
     const [hidden, setHidden] = useState(true);
-    function windowWidth() {
-        if (window.innerWidth >= 768) {
-            setHidden(false)
-        } else {
-            setHidden(true)
+    useEffect(() => {
+        function handleWindowWidth() {
+            if (window.innerWidth >= 768) {
+                setHidden(false);
+            } else {
+                setHidden(true);
+            }
         }
-    }
-    window.onresize = windowWidth;
-    window.addEventListener('load', windowWidth);
+
+        // Call the function initially
+        handleWindowWidth();
+
+        // Add event listener for resize
+        window.addEventListener("resize", handleWindowWidth);
+
+        // Cleanup function to remove event listener
+        return () => {
+            window.removeEventListener("resize", handleWindowWidth);
+        };
+    }, []); // Empty dependency array to run effect only once after initial render
+
 
 
     return (

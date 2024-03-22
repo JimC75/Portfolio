@@ -19,6 +19,8 @@ export default function Contact() {
                     console.log('FAILED...', error.text);
                 },
             );
+
+        alert('Votre message a bien été envoyé');
     };
 
     return (
@@ -27,15 +29,15 @@ export default function Contact() {
             <form ref={form} onSubmit={sendEmail} className='contact-form' >
                 <div className="contact-form-item">
                     <label>Nom *</label>
-                    <input type="text" name="user_name" required data-aos="zoom-out" data-aos-duration="1200" />
+                    <input type="text" placeholder="Votre nom" name="user_name" required data-aos="zoom-out" data-aos-duration="1200" />
                 </div>
                 <div className="contact-form-item">
                     <label>E-mail *</label>
-                    <input type="email" name="user_email" required data-aos="zoom-out" data-aos-duration="1200" />
+                    <input type="email" placeholder="Votre e-mail" name="user_email" required data-aos="zoom-out" data-aos-duration="1200" />
                 </div>
                 <div className="contact-form-item">
                     <label>Message *</label>
-                    <textarea name="message" required data-aos="zoom-out" data-aos-duration="1200" />
+                    <textarea name="message" placeholder="Votre message" required data-aos="zoom-out" data-aos-duration="1200" />
                     <p>* = champ obligatoire</p>
                 </div>
                 <input type="submit" value="Envoyer" id='submit-button' />

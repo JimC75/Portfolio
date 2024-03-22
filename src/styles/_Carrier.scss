@@ -35,9 +35,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: 0 0;
-            position: fixed;
+            object-position: 0% 50%;
+            position: absolute;
             bottom: 0;
+            top: 0;
+            right: 0;
             left: 0;
         }
 
@@ -66,8 +68,8 @@
     }
 }
 
-// @media(hover:none) {
-//     .button-background {
-//         background-attachment: initial;
-//     }
-// }
+@media(min-width: 768px) {
+    .button-image {
+        position: fixed !important;
+    }
+}

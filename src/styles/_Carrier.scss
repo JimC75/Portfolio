@@ -1,6 +1,8 @@
 .carrier {
     background-color: $navi;
     color: white;
+    max-width: 1440px;
+    margin: auto;
 
 
 
@@ -69,7 +71,28 @@
 }
 
 @media(min-width: 768px) {
-    .button-image {
-        position: fixed !important;
+    .carrier {
+        .carrier-presentation {
+            font-size: 18px;
+            padding: 0 20px;
+            max-width: 768px;
+            margin: 20px auto 40px auto;
+        }
+
+        .button-image {
+            position: fixed !important;
+        }
+
+        .download-button {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .carrier {
+        .carrier-presentation {
+            border-inline: 3px solid rgb(255, 153, 0);
+        }
     }
 }

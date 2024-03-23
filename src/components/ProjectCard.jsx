@@ -16,15 +16,17 @@ export default function ProjectCard({
       <img src={cover} alt={name} className="project-card-cover" />
 
       <div className="project-card-right-container">
-        <div className="title-countainer">
+        <div className="title-container">
           <h3 className="project-card-name">{name}</h3>
         </div>
-        <div className="links-countainer">
+        <div className="links-container">
           <a href={live} target="_blank" title="Visiter le site">
-            <FaExternalLinkAlt />
+            <FaExternalLinkAlt className="link-icon" />
+            Site
           </a>
           <a href={code} target="_blank" title="Voir le code">
-            <FaCode />
+            <FaCode className="link-icon" />
+            Code
           </a>
         </div>
       </div>

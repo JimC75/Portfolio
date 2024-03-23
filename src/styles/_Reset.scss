@@ -21,7 +21,8 @@ $darkest-grey: #282828;
 }
 
 #root {
-  max-width: 1440px;
+  // max-width: 1440px;
+  background-color: $navi;
   margin: 0 auto;
   font-family: Montserrat, Helvetica;
   text-align: center;

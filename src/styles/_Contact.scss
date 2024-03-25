@@ -108,3 +108,49 @@
         }
     }
 }
+
+@media(min-width:992px) {
+    .contact {
+        .contact-form {
+            width: 900px !important;
+
+            label,
+            input,
+            textarea {
+                font-size: 20px !important;
+            }
+
+            .contact-form-item:nth-child(1) {
+                width: 420px;
+            }
+
+            .contact-form-item:nth-child(2) {
+                width: 420px;
+
+            }
+
+            .contact-form-item:nth-child(3) {
+                width: 870px;
+                margin: auto;
+
+                textarea {
+                    height: 300px;
+                }
+            }
+
+            .contact-form-item {
+
+                input,
+                textarea {
+                    border-radius: 30px;
+                }
+            }
+
+            #submit-button {
+                font-size: 18px !important;
+                margin: 20px auto;
+                border-radius: 30px;
+            }
+        }
+    }
+}

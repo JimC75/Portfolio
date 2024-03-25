@@ -17,18 +17,12 @@ function Header() {
                 setHidden(true);
             }
         }
-
-        // Call the function initially
         handleWindowWidth();
-
-        // Add event listener for resize
         window.addEventListener("resize", handleWindowWidth);
-
-        // Cleanup function to remove event listener
         return () => {
             window.removeEventListener("resize", handleWindowWidth);
         };
-    }, []); // Empty dependency array to run effect only once after initial render
+    }, []);
 
 
 
@@ -43,15 +37,13 @@ function Header() {
                     <li><Link to="contact" className="nav-link" smooth={true} duration={500} offset={0}>Me Contacter</Link></li>
                 </ul>
 
-                <div className="dropdown-content">
-                    <ul className={hidden && "hidden"}>
-                        <li><Link to="skills" className="nav-link" smooth={true} duration={500} offset={10}>Mes Compétences</Link></li>
-                        <li><Link to="projects" className="nav-link" smooth={true} duration={500} offset={-20}>Mes Projets</Link></li>
-                        <li><Link to="contact" className="nav-link" smooth={true} duration={500} offset={0}>Me Contacter</Link></li>
-
-                        {/* Add more links for other sections as needed */}
-                    </ul>
-                </div>
+            </div>
+            <div className="dropdown-content">
+                <ul className={hidden && "hidden"}>
+                    <li><Link to="skills" className="nav-link" smooth={true} duration={500} offset={10}>Mes Compétences</Link></li>
+                    <li><Link to="projects" className="nav-link" smooth={true} duration={500} offset={-20}>Mes Projets</Link></li>
+                    <li><Link to="contact" className="nav-link" smooth={true} duration={500} offset={0}>Me Contacter</Link></li>
+                </ul>
             </div>
         </nav>
     );

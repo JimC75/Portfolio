@@ -7,7 +7,6 @@
 
     h2 {
         margin-top: 20px;
-        font-weight: 600;
         text-shadow: 1px 1px 1px orange;
     }
 
@@ -109,6 +108,25 @@
                 .brand-icon {
                     font-size: 60px;
                     margin: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .skills {
+        h2 {
+            padding-top: 60px;
+        }
+
+        .logos {
+            margin: 40px 0;
+
+            .logos-slide {
+                .brand-icon {
+                    font-size: 100px;
+                    margin: 100px;
                 }
             }
         }

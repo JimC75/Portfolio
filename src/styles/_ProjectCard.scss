@@ -1,6 +1,5 @@
 .project-card {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(190, 197, 221, 1) 61%, $light-slate 100%);
-    // background-color: rgba(190, 197, 221, 1);
     box-shadow: 6px 6px 0px rgba(255, 166, 0, 0.8);
 
     width: 340px;
@@ -41,14 +40,12 @@
         .title-container {
             position: absolute;
             right: 0px;
-            // text-shadow: 3px 3px 3px orange;
             box-shadow: 3px -1px 2px white;
             border-radius: 0 10px 0 0;
             margin: 7px;
             width: 50px;
             height: 146px;
             text-align: start;
-            // white-space: nowrap;
 
 
             .project-card-name {
@@ -78,9 +75,6 @@
             flex-wrap: wrap;
 
             a {
-                // display: block;
-                // border: 2px solid $light-grey;
-                // color: $light-grey;
                 text-decoration: none;
                 border: 2px solid $mid-grey;
                 color: $mid-grey;
@@ -99,21 +93,11 @@
                 }
             }
 
-            // a:nth-child(2) {
-            //     font-size: 28px;
-            //     margin-bottom: 3px;
-            // }
-
             a:hover {
                 border: 2px solid orange;
                 background-color: $dark-grey;
-                // font-size: 26px;
                 color: white
             }
-
-            // a:nth-child(2):hover {
-            //     font-size: 32px;
-            // }
         }
     }
 
@@ -154,7 +138,6 @@
     .project-card-cover {
         width: 250px;
         height: 150px;
-        // padding: 5px;
         margin: 5px;
         border: 2px solid orange;
     }
@@ -189,12 +172,20 @@
                 height: 90px;
 
                 a {
-                    font-size: 18px;
+                    width: 90px;
+                    height: 40px;
+                    font-size: 20px;
 
-                    .link-icon {}
+                    .link-icon {
+                        font-size: 18px;
+                    }
                 }
 
-                a:nth-child(2) {}
+                a:nth-child(2) {
+                    .link-icon {
+                        font-size: 24px !important;
+                    }
+                }
 
                 a:hover {}
             }

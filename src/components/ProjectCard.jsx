@@ -25,7 +25,7 @@ export default function ProjectCard({
             Site
           </a>
           <a href={code} target="_blank" title="Voir le code">
-            <FaCode className="link-icon" />
+            <FaCode className="link-icon" id="code-icon" />
             Code
           </a>
         </div>

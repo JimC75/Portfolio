@@ -51,20 +51,3 @@ class App extends Component {
 }
 
 export default App;
-
-// export default function App() {
-//   return (
-//     <BrowserRouter>
-//       <Header />
-//       <About />
-//       <Element name="section1">
-//         <Skills />
-//       </Element>
-//       <Element name="Projects">
-//         <Projects />
-//       </Element>
-//       <Contact />
-//       <Footer />
-
-//     </BrowserRouter>)
-// }

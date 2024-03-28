@@ -13,7 +13,8 @@ export default function Footer() {
                 </a>
             </div>
             <p><span className="special-character">©</span> 2024 • made by Jean-Marie CHATEAUX.</p>
-            <p>Web Developer from France</p>
+            <p>Web Developer from France.</p>
+            <p>Website developed in React using Vite and EmailJS.</p>
         </footer>
     )
 }
